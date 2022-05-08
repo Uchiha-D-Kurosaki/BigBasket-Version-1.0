@@ -1,0 +1,83 @@
+#checkout{
+    display:flex;
+    height:80px;
+    width:400px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(132, 194, 37);
+   border-radius: 20px;
+   margin-left: 68%;
+ 
+ }
+ #amttag{
+     margin-right: 10px;
+     font-size: 26px;
+     font-weight: bold;
+     color: white;
+ }
+ #amount{
+     font-size: 26px;
+     font-weight: bold;
+     color: white;
+ }
+ /* #cart{
+     display:flex;
+     height:100px;
+     width:300px;
+      margin-left: 80%;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid #fee67c;
+     background: #fee67c;
+     background: linear-gradient(180deg,#fee67c 0,#f2cb76);
+     border-radius: 20px;
+     margin-top: 20px;
+     
+     font-size: 26px;
+     margin-bottom: 40px;
+     
+ } */
+ #logo{
+     display:flex;
+     margin: auto;
+     margin-bottom: 20px;
+     width: 80%;
+ }
+ #logo>img{
+     height: 150px;
+     width: 150px;
+     border-top-left-radius: 20px;
+     border-bottom-left-radius: 20px;
+     margin-top: 20px;
+     
+ }
+ #logo>div{
+     margin-top: 20px;
+     
+ }
+ #yourbasket{
+     font-size: 26px;
+ }
+ #logo>img+div{
+     height: 150px;
+     width: 100%;
+     background-color: white;
+     display: flex;
+     align-items: center;
+     font-size: 32px;
+     color: black;
+     
+ }
+
+ img+div>p{
+     margin-left: 40px;
+ }
+ 
+ hr{
+     margin-bottom: 30px;
+ }
+
+ .anchor{
+     text-decoration: none;
+ }
