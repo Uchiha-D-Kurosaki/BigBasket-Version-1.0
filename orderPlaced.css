@@ -1,0 +1,80 @@
+#flex{
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+}
+#flex img{
+    margin-right: 30px;
+}
+p{
+    font-size: 22px;
+    font-weight: bold;
+}
+#flex-2{
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#flex-2>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flex-2 img{
+    height: 30px;
+    margin-left: 5px;
+}
+#feedback{
+    width: 40%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+#form>input:nth-child(1){
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: scroll;
+    /* border: none; */
+    /* border-color: transparent; */
+    outline: none;
+}
+#form>input:nth-child(2){
+    margin-left: 40%;
+    width: 15%;
+    margin-top: 20px;
+}
+#feedback{
+    margin-left: 37%;
+    border: none;
+    color:  #84c225;
+    background-color: white;
+    font-size: 25px;
+}
+#feedback:hover{
+    cursor: pointer;
+    color: teal;
+}
+#fa{
+    text-decoration: none;
+}
