@@ -1,0 +1,282 @@
+*{
+    margin:0px;
+    padding:0px;
+    font: 16px ProximaNovaA-Semibold;
+}
+#header{
+  margin:auto;
+  margin-left: 10%;
+  /* border: 1px solid red; */
+  width:80%;
+  height:auto;
+  /* background-color: white; */
+  /* z-index: 2; */
+ 
+ }
+#biglogo{
+    /* border: 1px solid blue; */
+    display:flex;
+    margin:5px 0px 0px 20px;
+}
+#biglogo>img:nth-child(1){
+    width:170px;
+    height:75px;
+}
+#selector{
+   
+    margin-bottom:0px;
+    display: flex;
+    border:1px solid gainsboro;
+    width:100%;
+    height:38px
+   
+     }
+    #selector>div:nth-child(1){
+        background-color: rgb(109, 173, 13);
+             width:200px;
+            height:auto;
+             color:white;
+             text-align: center;
+             padding: 10px 30px 10px 0px ;
+             margin:0px 0px 0px 0px
+         
+    }
+    #selector>div:nth-child(2){
+        padding: 10px 30px 10px 0px ;  
+        display: flex;
+           background-color: white;
+           color:black
+        }
+        #selector>div:nth-child(2):hover{
+            color:white;
+            background-color:rgb(79, 167, 7);
+        }
+        #selector>div:nth-child(3):hover{
+            color:white;
+            background-color:rgb(79, 167, 7);
+        }
+    #selector>div:nth-child(3){
+        padding: 10px 30px 10px 0px ;
+        margin:0px -100px 0px 0px;
+        display: flex;
+        background-color: white;
+           color:black
+           
+    }
+    #selector>div>img:nth-child(1){
+        margin:0px 10px 0px 20px;
+        width:15px;
+        height:15px
+       
+    }  
+    #selector>div>img:nth-child(2){
+        margin:0px 10px 0px 20px;
+        width:25px;
+        height:25px
+       
+    }  
+             
+ 
+    #basket>img{
+        width:40px;
+        height:40px;
+        margin-top: 10px ;
+    }
+    #basket{
+        display:flex;
+         margin-top: 20px;
+         margin-left: 150px;
+         width:150px;
+       
+        justify-content: space-between;
+        background-color: rgba(245, 239, 239, 0.774);
+    }
+    #basket>p{
+        margin: 15px 10px;
+    }
+    #mySlides{
+        width:85%;
+        margin:auto;
+        margin-top:50px;
+    }
+ 
+ 
+    #myslides>img{
+        width:100%;
+    }
+    #add{
+        width:85%;
+        margin:auto;
+        margin-top:40px;
+    }
+    #add>img{
+        width:100%;
+    }
+    #font{
+           margin:auto;
+        margin-top: 40px;
+        width:80%;
+   
+      }
+      #font>p{
+        font-size: 26px;
+      }
+      #select{
+          margin-top: -50px;
+        background-color:rgb(109, 173, 13);
+        border: 0px;
+        width:230px;
+        outline-style: none;  
+        color: white;
+    }
+   
+  #contact{
+      display: flex;
+      margin-left: 700px;
+     }
+     #contact>p{
+         margin:10px 0px 0px 20px;
+         font-size: 12px;
+     }
+     #contact>p:hover{
+         color:rgb(131, 250, 131)
+     }
+     #contact>img{
+         width:15px;
+         height: 15px;
+         margin:10px 0px 0px 30px;
+     }
+     #select2{
+        display: flex;
+        justify-content: space-between;
+        width:85%;
+        margin: auto;
+        margin-top: 40px;
+    }
+    #select2>p{
+        font-size: 30px;
+        color: rgb(70, 67, 67);
+    }
+    #fixprise{
+        color: gray;
+        border: 1px gray solid;
+        width:220px;
+        height:25px;
+        outline-style: none;
+    }
+               
+    #searchbar{
+        border:1px solid rgb(187, 179, 179);
+        height:28px;
+        width:50%;
+        padding-top:px;
+        justify-content: space-between;
+        margin:30px 50px;
+        display:flex;
+        color:gray
+     }
+     #searchbar>div>img{
+       
+         width:30px;
+         height:30px;
+       
+     }
+    #search{
+           margin: 0px 0px 20px;
+           width:550px;
+           padding: 5px 0px 5px 5px;
+           border: 1px gray;
+           outline-style: none;
+ 
+         }
+         #srcform{
+            border: 1px gray;
+           
+         }
+         #gridtital{
+            width:85%;
+            margin:auto;
+            margin-top: 40px;
+            display: flex;
+            font-size: 15px;
+           
+        }
+        #gridtital>img{
+            width:30px;
+            margin-right: 10px;
+        }
+        .hr{
+           
+            width:85%;
+            margin:auto;
+           
+        }
+    #grid{
+        display:grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(4,300px);
+        gap:20px;
+        width:85%;
+        margin:auto;
+        margin-top: 30px;
+    }
+    #grid>div{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    .anchor{
+        text-decoration: none;
+        color: slategray;
+    }
+    .anchor:hover{
+        color: rgb(109, 173, 13);
+    }
+
+
+    #slider{
+        width: 83%;
+        margin: auto;
+       margin-top: 50px;
+         
+        overflow: hidden;
+    }
+    #slider figure{
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 20s slider infinite;
+    }
+    #slider figure img{
+        float: left;
+        width: 20%;
+    }
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+        20% {
+            left: 0;
+        }
+        25% {
+            left: -100%;
+        }
+        45% {
+            left: -100%;
+        }
+        50% {
+            left: -200%;
+        }
+        70% {
+            left: -200%;
+        }
+        75% {
+            left: -300%;
+        }
+        95% {
+            left: -300%;
+        }
+        100% {
+            left: -400%;
+        }
+ 
+    }
