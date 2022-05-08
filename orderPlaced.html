@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orderPlaced.css">
+    <link rel="stylesheet" href="finalNavigation.css">
+    <title>Order Placed</title>
+</head>
+<body>
+    <div id="header">
+ 
+        <div id="contact">
+            <img src="https://th.bing.com/th/id/OIP.bqxe5njebbnQ4rOhrye52AHaHa?w=215&h=215&c=7&r=0&o=5&pid=1.7"/>
+           <P>1860 123 1000</P>
+           <img src="https://th.bing.com/th/id/OIP.po9KHFVCIA3iRW0T4JG10gHaHa?w=193&h=193&c=7&r=0&o=5&pid=1.7"/>
+           <P>560004 Bangalore</P>
+           <img src="https://th.bing.com/th/id/OIP.GfJbHfrKEGU1_4yCUGPtXwHaHa?pid=ImgDet&rs=1"/>
+           <p><a class="anchor" href="login.html">Login & SignUp</a></p>
+        </div>
+           <div id="biglogo">
+               <a href="homePage.html"><img src="https://www.bbassets.com/static/v2541/custPage/build/content/img/bb_logo.png"
+                   alt=logo/></a>
+               
+               <div id="searchbar">
+                  <form id="srcform">
+                  
+                   <input id="search" placeholder="Search for products..."  type="text"/>
+                  </form>
+                   <div>
+                     <img src="https://th.bing.com/th/id/OIP.XL5QCLZrCZDdfz92L2l6aAHaHa?w=215&h=215&c=7&r=0&o=5&pid=1.7"/>
+                   </div>
+              </div>
+              <a class="anchor" href="cart.html" target="_blank">
+               <div id="basket">
+                   <img src="https://th.bing.com/th/id/R.4c47fac3382db34754b4ccde6ba7d842?rik=c3tD5KhnIquG5w&riu=http%3a%2f%2fclipart-library.com%2fnewhp%2fkissclipart-average-basket-size-clipart-shopping-cart-basket-c8a7600bbd385e46.jpg&ehk=3mzhPADiQCEli7kcaCSMZPn%2fAzV5RJLpnaJLxU5B2aw%3d&risl=&pid=ImgRaw&r=0"/>
+                   <p>My Basket</p>
+                  </div>
+              </a>
+              
+          
+    
+           </div>
+           <div id="selector">
+               <div>
+                   <select id="select" onchange="myFunction()">
+                       <option value="1">Shop By Category</option>
+                       <option value="2">Fruits & Vegetables</option>
+                       <option value="3">Foodgrains, oil & Masala</option>
+                       <option value="4">Bakery, Cakes & Dairy</option>
+                       <option value="5">Beverages</option>
+                       <option value="6">Snacks & Branded Foods</option>
+                       <option value="7">Cleaning & Household</option>
+                       <option value="8">Eggs, Meat & Fish</option>
+                       <option value="9">Gourmet & World Food</option>
+                       <option value="10">Baby Care</option>
+                   </select>
+               </div>
+               <div>
+                   <img src="https://th.bing.com/th/id/R.2f49f64bdcd32b46179b8e016ec1f9f8?rik=Gf6OrZZJDb%2fHCA&riu=http%3a%2f%2fwww.officialpsds.com%2fimages%2fthumbs%2fRed-Tag-psd73023.png&ehk=xEdBAaafGRpAgzSnh%2b4GTab5cZxJv2yGnhpKWJwD2Xw%3d&risl=&pid=ImgRaw&r=0"/>
+                   <p>OFFERS</p>
+               </div>
+               <div>
+                   <img src="https://th.bing.com/th/id/OIP.wH0XCp7nJwXyjLt1C9NWAwHaHa?w=189&h=189&c=7&r=0&o=5&pid=1.7"/>
+                   <P>BB SPECIALTY</P>
+               </div>
+           </div>
+              
+       </div>
+
+    <div id="flex">
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/128/3472/3472620.png" alt="orderPlaced">
+        </div>
+        <div>
+            <p>Your Order has been placed Successfully.</p>
+        </div>
+    </div>
+    <div id="flex-2">
+        <div>
+            <p>Thank you for Shopping at BigBasket !!</p>
+            <p>
+                <img src="https://cdn-icons-png.flaticon.com/128/742/742751.png" alt="">
+            </p>
+        </div>
+    </div>
+    <a id="fa" href="feedback.html">
+        <button id="feedback">Please provide your valuable Feedback</button>
+    
+    </a>
+    
+</body>
+</html>
+
+<script>
+    function myFunction(){
+        if(select.value=="2"){
+            window.location.href="productVegetable.html"
+        }
+        if(select.value=="3"){
+            window.location.href="productFruitVegetable.html"
+        }
+        if(select.value=="4"){
+            window.location.href="productBakery.html"
+        }
+        if(select.value=="5"){
+            window.location.href="productBevarages.html"
+        }
+        if(select.value=="6"){
+            window.location.href="productSnacks_BrandedFoods.html"
+        }
+        if(select.value=="7"){
+            window.location.href="productCleaningHousehold.html"
+        }
+        if(select.value=="8"){
+            window.location.href="productEggMeatFish.html"
+        }
+    // Groundnuts
+        if(select.value=="9"){
+            window.location.href="productGourmet&WorldFood.html"
+        }
+        if(select.value=="10"){
+            window.location.href="productBabyCare.html"
+        }
+        
+    }
+</script>

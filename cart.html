@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="bill.css">
+    <link rel="stylesheet" href="finalNavigation.css">
+</head>
+<body>
+    <div>
+       
+        <div><a href="singup.html"></a></div>
+       
+ 
+    </div>
+    <div id="header">
+ 
+     <div id="contact">
+         <img src="https://th.bing.com/th/id/OIP.bqxe5njebbnQ4rOhrye52AHaHa?w=215&h=215&c=7&r=0&o=5&pid=1.7"/>
+        <P> 1860 123 1000</P>
+        <img src="https://th.bing.com/th/id/OIP.po9KHFVCIA3iRW0T4JG10gHaHa?w=193&h=193&c=7&r=0&o=5&pid=1.7"/>
+        <P>560004 Bangalore</P>
+        <img src="https://th.bing.com/th/id/OIP.GfJbHfrKEGU1_4yCUGPtXwHaHa?pid=ImgDet&rs=1"/>
+        <p><a class="anchor" href="singup.html">Logged In</a></p>
+     </div>
+     
+        <div id="biglogo">
+            <a href="homePage.html">
+                <img src="https://www.bbassets.com/static/v2541/custPage/build/content/img/bb_logo.png"
+            alt=logo/>
+            </a>
+            <div id="searchbar">
+               <form id="srcform">
+               
+                <input id="search" placeholder="Search for products..."  type="text"/>
+               </form>
+                <div>
+                  <img src="https://th.bing.com/th/id/OIP.XL5QCLZrCZDdfz92L2l6aAHaHa?w=215&h=215&c=7&r=0&o=5&pid=1.7"/>
+                </div>
+           </div>
+           <a href="" class="anchor">
+            <div  id="basket">
+                <img src="https://th.bing.com/th/id/R.4c47fac3382db34754b4ccde6ba7d842?rik=c3tD5KhnIquG5w&riu=http%3a%2f%2fclipart-library.com%2fnewhp%2fkissclipart-average-basket-size-clipart-shopping-cart-basket-c8a7600bbd385e46.jpg&ehk=3mzhPADiQCEli7kcaCSMZPn%2fAzV5RJLpnaJLxU5B2aw%3d&risl=&pid=ImgRaw&r=0"/>
+                <p>My Basket</p>
+               </div>
+           </a>
+           
+       
+ 
+        </div>
+        <div id="selector">
+            <div>
+                 <p>SHOP BY CATAGORY </p>
+                 <select id="select" onchange="myFunction()">
+                    <option value="1">Shop By Category</option>
+                    <option value="2">Fruits & Vegetables</option>
+                    <option value="3">Foodgrains, oil & Masala</option>
+                    <option value="4">Bakery, Cakes & Dairy</option>
+                    <option value="5">Beverages</option>
+                    <option value="6">Snacks & Branded Foods</option>
+                    <option value="7">Cleaning & Household</option>
+                    <option value="8">Eggs, Meat & Fish</option>
+                    <option value="9">Gaurmet & World Food</option>
+                    <option value="10">Baby Care</option>
+                </select>
+            </div>
+            <div>
+                <img src="https://th.bing.com/th/id/R.2f49f64bdcd32b46179b8e016ec1f9f8?rik=Gf6OrZZJDb%2fHCA&riu=http%3a%2f%2fwww.officialpsds.com%2fimages%2fthumbs%2fRed-Tag-psd73023.png&ehk=xEdBAaafGRpAgzSnh%2b4GTab5cZxJv2yGnhpKWJwD2Xw%3d&risl=&pid=ImgRaw&r=0"/>
+                <p>OFFERS</p>
+            </div>
+            <div>
+                <img src="https://th.bing.com/th/id/OIP.wH0XCp7nJwXyjLt1C9NWAwHaHa?w=189&h=189&c=7&r=0&o=5&pid=1.7"/>
+                <P>BB SPECIALTY</P>
+            </div>
+        </div>
+           
+    </div>
+   
+    <!-- <div id="logo">
+        <img src="https://entrackr.com/wp-content/uploads/2019/12/bigbasket-1200x600.jpg.webp"/>
+        <div><p>Your Basket</p></div>
+        <div id="checkout">
+            <div id="amttag">Your Subtotal is Rs</div>
+            <div id="amount"></div>
+        </div>
+       
+    </div> -->
+    <div id="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/4290/4290854.png"/>
+        <div><p id="yourbasket">Your Basket</p></div>
+    </div>
+   
+    <div id="container"></div>
+
+  <hr id="tophr"/>
+  <div id="org">
+    <div id="outer">
+      <div id="outer1">
+        <div><p id="Subtotal">Subtotal</p>
+             <p id="Delivery">Delivery Charges</p>
+        </div>  
+        <div><p id="rs">Rs.</p>
+             <p id="star">**</p>
+        </div>
+
+
+        <div><p id="dis"></p>
+            <p></p></div>
+    </div>
+<hr id="hr">
+        
+    <div id="outer2">
+        <div id="total">TOTAL</div>
+        <div>Rs.</div>
+        <div><p id="distotal"></p></div>
+    </div>
+
+    <div id="tag">
+        <p id="comment">* For this order: Accepted food coupon is Rs. </p>
+        <p id="distag"></p>
+    </div> 
+    <hr id="hr1"> 
+     <button id="check"> <a href="orderPlaced.html">Place Order</a> </button>
+     <p id="lc">** Actual delivery charges computed at checkout time</p>
+  </div>
+<div id="vl"></div>
+<div>
+    <img src="https://cdn-icons-png.flaticon.com/512/584/584011.png"/>
+    <p id="saved">You saved!</p>
+    <div id="sa"> <p id="sa1">Rs.</p>
+         <p id="sa2"></p></div>
+    
+</div>
+
+</div>
+
+    <!-- <div id="checkout">
+        <div id="amttag">Your Subtotal is Rs</div>
+        <div id="amount"></div>
+    </div>
+    -->
+
+  
+
+</body>
+</html>
+<script>
+
+function myFunction(){
+        if(select.value=="2"){
+            window.location.href="productVegetable.html"
+        }
+        if(select.value=="3"){
+            window.location.href="productFruitVegetable.html"
+        }
+        if(select.value=="4"){
+            window.location.href="productBakery.html"
+        }
+        if(select.value=="5"){
+            window.location.href="productBevarages.html"
+        }
+        if(select.value=="6"){
+            window.location.href="productSnacks_BrandedFoods.html"
+        }
+        if(select.value=="7"){
+            window.location.href="productCleaningHousehold.html"
+        }
+        if(select.value=="8"){
+            window.location.href="productEggMeatFish.html"
+        }
+    // Groundnuts
+        if(select.value=="9"){
+            window.location.href=".html"
+        }
+        if(select.value=="10"){
+            window.location.href="productBabyCare.html"
+        }
+        
+    }
+
+    var z=JSON.parse(localStorage.getItem("cart"))
+    z.forEach(function(elem,index){
+    
+    var x=document.createElement("div")
+   
+    var aa=document.createElement("p")
+    aa.innerText=elem.dis
+    aa.setAttribute("id","discount")
+   
+    var disdiv=document.createElement("div")
+    disdiv.setAttribute("id","disdiv")
+   disdiv.append(aa)
+   
+           
+   var a=document.createElement("img")
+   a.setAttribute("src",elem.img)
+   a.setAttribute("id","pimg")
+   
+   var b=document.createElement("p")
+   b.innerText=elem.brand
+   b.setAttribute("id","brand")
+   
+   var c=document.createElement("p")
+   c.innerText=elem.name
+   c.setAttribute("id","name")
+   
+//    var d=document.createElement("p")
+//    d.innerText=elem.rate
+//    d.setAttribute("id","rate")
+   
+//    var e=document.createElement("p")
+//    e.innerText=elem.rating
+//    e.setAttribute("id","rating")
+   
+//    var disdiv1=document.createElement("div")
+//     disdiv1.setAttribute("id","disdiv1")
+//    disdiv1.append(d,e)
+   
+   var mrp=document.createElement("p")
+   mrp.innerText="MRP : "
+   mrp.setAttribute("id","mrptag")
+   
+   var f=document.createElement("p")
+   f.innerText=elem.mrp
+   f.setAttribute("id","mrp")
+   
+   var g=document.createElement("p")
+   g.innerText=elem.ap
+   g.setAttribute("id","ap")
+   
+   var disdiv2=document.createElement("div")
+    disdiv2.setAttribute("id","disdiv2")
+   disdiv2.append(mrp,f,g)
+   
+   var del=document.createElement("p")
+   del.innerText="Standard Delivery: Tomorrow 2:00PM - 6:30PM"
+   del.setAttribute("id","del")
+   
+   var qty=document.createElement("button")
+   qty.innerText="Qty"
+   qty.setAttribute("id","qty")
+   
+   var qno=document.createElement("button")
+   qno.innerText="1"
+   qno.setAttribute("id","qno")
+   
+   var h=document.createElement("button")
+   h.innerText="Delete"
+   h.addEventListener("click",function(){
+    z.splice(index,1)
+     localStorage.setItem("cart",JSON.stringify(z))
+     window.location.reload()
+   })
+   h.setAttribute("id","addtocart")
+   
+   var lowerdiv=document.createElement("div")
+   lowerdiv.setAttribute("id","lowerdiv")
+   
+   lowerdiv.append(disdiv2,del,qty,qno,h)
+   
+   x.append(disdiv,a,b,c,lowerdiv)
+   var y=document.querySelector("#container")
+   y.append(x)
+   
+    })
+var su=z.reduce(function(sum,elem){
+    return sum=sum+ +elem.ap
+},0)
+
+ var saves=z.reduce(function(sum,elem){
+   return sum=sum+ +elem.mrp
+ },0)
+ console.log(saves)
+// var t=document.querySelector("#amount")
+// t.innerText=Math.ceil(su)
+
+var uu=document.querySelector("#dis")
+uu.innerText=Math.ceil(su)
+
+var uuu=document.querySelector("#distotal")
+uuu.innerText=Math.ceil(su)
+
+var u=document.querySelector("#distag")
+u.innerText=Math.ceil(su)
+var x= Math.ceil( +saves - +su   )
+
+ var v=document.querySelector("#sa2")
+ v.innerText= Math.ceil(x)
+// console.log(v)
+// console.log(su)
+</script>
