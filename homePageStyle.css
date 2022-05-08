@@ -1,0 +1,149 @@
+/* body  and common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.head{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+/* hr{
+    margin-top: -15px;
+} */
+h2{
+    font-size: 28px;
+}
+.body{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    /* border: 1px solid red; */
+}
+.head>h2{
+    text-align: center;
+    color: #444444;
+}
+.head>div>span{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: #84C225;
+}
+.head>div>span>a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* quickNav */
+.quickNav{
+    width: 80%;
+    margin: auto;   
+    margin-top: 40px; 
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(1,auto);
+    gap: 20px;
+    /* border: 2px solid black; */
+}
+.quickNav>div{
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.quickNav>div>a>img{
+    width: 100%;;
+}
+
+
+
+/* sections  */
+.sections{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    /* border:2px solid black; */
+}
+
+/* .basketSection{
+    width: 100%;
+} */
+
+/* bankOffers */
+.bankOffers{
+    margin: auto;
+    /* border: 1px solid blue; */
+}
+.bankOffers>.body{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,auto);
+    gap: 20px;
+}
+.bankOffers>.body>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 0.1px solid rgb(226, 221, 221);
+}
+.bankOffers>.body>div>a>img{
+    width: 100%;
+}
+
+
+
+/* fruitsVegetables */
+.fruitsVegetables{
+    margin: auto;
+    /* border: 1px solid blue; */
+}  
+.fruitsVegetables>.body{
+    display: grid;
+    margin-bottom: 40px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 20px;
+}   
+.fruitsVegetables>.body>div{
+    border: 0.1px solid rgb(226, 221, 221);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}  
+.fruitsVegetables>.body>div>a>img{
+    width: 100%;
+}  
+.fruitsVegetables>.body>div:first-child{
+    grid-area: 1/1/3/3;
+}
+
+
+
+/* dailyStaples */
+.dailyStaples{
+    margin: auto;
+    /* border: 1px solid blue; */
+}
+.dailyStaples>.body{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(1,auto);
+    gap: 20px;
+}
+.dailyStaples>.body>div{
+    border: 0.1px solid rgb(226, 221, 221);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} 
+.dailyStaples>.body>div>a>img{
+    width: 100%;
+}
+
+
+/* brandStore */
+.brandStore{
+    width: 80%;
+    margin: auto;
+}
+
+
+
+
