@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="finalNavigation.css">
+    
+</head>
+
+<body>
+    <div id="header">
+ 
+        <div id="contact">
+            <img src="https://th.bing.com/th/id/OIP.bqxe5njebbnQ4rOhrye52AHaHa?w=215&h=215&c=7&r=0&o=5&pid=1.7"/>
+           <P>1860 123 1000</P>
+           <img src="https://th.bing.com/th/id/OIP.po9KHFVCIA3iRW0T4JG10gHaHa?w=193&h=193&c=7&r=0&o=5&pid=1.7"/>
+           <P>560004 Bangalore</P>
+           <img src="https://th.bing.com/th/id/OIP.GfJbHfrKEGU1_4yCUGPtXwHaHa?pid=ImgDet&rs=1"/>
+           <p><a class="anchor" href="login.html">Login & SignUp</a></p>
+        </div>
+           <div id="biglogo">
+               <a href="homePage.html"><img src="https://www.bbassets.com/static/v2541/custPage/build/content/img/bb_logo.png"
+                   alt=logo/></a>
+               
+               <div id="searchbar">
+                  <form id="srcform">
+                  
+                   <input id="search" placeholder="Search for products..."  type="text"/>
+                  </form>
+                   <div>
+                     <img src="https://th.bing.com/th/id/OIP.XL5QCLZrCZDdfz92L2l6aAHaHa?w=215&h=215&c=7&r=0&o=5&pid=1.7"/>
+                   </div>
+              </div>
+              <a class="anchor" href="cart.html" target="_blank">
+               <div id="basket">
+                   <img src="https://th.bing.com/th/id/R.4c47fac3382db34754b4ccde6ba7d842?rik=c3tD5KhnIquG5w&riu=http%3a%2f%2fclipart-library.com%2fnewhp%2fkissclipart-average-basket-size-clipart-shopping-cart-basket-c8a7600bbd385e46.jpg&ehk=3mzhPADiQCEli7kcaCSMZPn%2fAzV5RJLpnaJLxU5B2aw%3d&risl=&pid=ImgRaw&r=0"/>
+                   <p>My Basket</p>
+                  </div>
+              </a>
+              
+          
+    
+           </div>
+           <div id="selector">
+               <div>
+                   <select id="select" onchange="myFunction()">
+                       <option value="1">Shop By Category</option>
+                       <option value="2">Fruits & Vegetables</option>
+                       <option value="3">Foodgrains, oil & Masala</option>
+                       <option value="4">Bakery, Cakes & Dairy</option>
+                       <option value="5">Beverages</option>
+                       <option value="6">Snacks & Branded Foods</option>
+                       <option value="7">Cleaning & Household</option>
+                       <option value="8">Eggs, Meat & Fish</option>
+                       <option value="9">Gourmet & World Food</option>
+                       <option value="10">Baby Care</option>
+                   </select>
+               </div>
+               <div>
+                   <img src="https://th.bing.com/th/id/R.2f49f64bdcd32b46179b8e016ec1f9f8?rik=Gf6OrZZJDb%2fHCA&riu=http%3a%2f%2fwww.officialpsds.com%2fimages%2fthumbs%2fRed-Tag-psd73023.png&ehk=xEdBAaafGRpAgzSnh%2b4GTab5cZxJv2yGnhpKWJwD2Xw%3d&risl=&pid=ImgRaw&r=0"/>
+                   <p>OFFERS</p>
+               </div>
+               <div>
+                   <img src="https://th.bing.com/th/id/OIP.wH0XCp7nJwXyjLt1C9NWAwHaHa?w=189&h=189&c=7&r=0&o=5&pid=1.7"/>
+                   <P>BB SPECIALTY</P>
+               </div>
+           </div>
+              
+       </div>
+  <!-- <div><a href="index.html"></a></div> -->
+    <form id="form">
+        <h1>Log In</h1>
+        <input placeholder="Enter 10-Digit Mobile Number" id="mobile" type="Number"/>
+        <hr style="width:85%">
+        <input placeholder="Enter your password" id="password" type="password" />
+        <hr style="width:85%">
+        <input type="email" id="email" placeholder="Enter your Email" />
+        <hr style="width:85%">
+       <input type="submit" id="Cont" value="LogIn" />
+       <div><p>New User? <a id="anchor"href="signup.html"><span>Sign Up</span></a> </p></div>
+        <p>By continuing, I accept TCP-bigbasket's Terms and Conditions and Privacy Policy.</p>
+    </form> 
+
+</body>
+</html>
+
+<script>
+    var userData=JSON.parse(localStorage.getItem("allUsers"));
+    document.querySelector("#form").addEventListener("submit",logIn)
+
+    function logIn(){
+        event.preventDefault();
+        var x=document.querySelector("#mobile").value;
+
+        var y=document.querySelector("#password").value;
+
+        var z=document.querySelector("#email").value;
+        if(!x || !y || !z) 
+        {
+            alert("Enter full details")
+            return;
+        }
+      
+        var findUser=userData.find(function(c){
+            return c.x==x && c.y==y && c.z==z;
+        
+        }) 
+        console.log(findUser)
+        if(!findUser){
+            alert("User not found!!");
+            return;
+        }
+        alert("Log In Successfull");
+        window.location.href="homePage.html";
+        // userData.push((x,y));
+        // localStorage.setItem("allUsers", JSON.stringify(userData))
+    }
+    
+
+</script>
+

@@ -1,0 +1,92 @@
+/* <style> */
+#form{
+   height:auto;
+   width: 25%;
+   margin: auto;
+   margin-top: 50px;
+   background-color:white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   border: 1px solid rgb(184, 179, 179);
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#form>h1{
+    /* color:rgb(61, 218, 61); */
+    color: #84c225;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+hr{
+    height:0.5px;
+}
+#mobile{
+    text-align: left;
+    height:40px;
+    width:85%;
+    background-color: white;   
+    border:1px rgb(177, 173, 173);
+    margin-top:15px;
+    outline: none;
+}
+#password{
+    text-align: left;
+    height:40px;
+    width:85%;
+    background-color: white;   
+    border:1px rgb(177, 173, 173);
+    margin-top:30px;
+    outline: none;
+}
+#email{
+    text-align: left;
+    height:40px;
+    width:85%;
+    background-color: white;   
+    border:1px rgb(177, 173, 173);
+    margin-top:30px;
+    outline: none;
+}
+#Email:hover,#mobile:hover,#password:hover{
+    background-color: #e6e6e6;
+}
+#Cont{
+    margin-top:20px;
+    height:50px;
+    width:85%;
+    color:white;
+    background-color: #84c225;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border:1px  #84c225;
+}
+#Cont:hover{
+    color: #84c225;;
+    background-color: #e6e6e6;
+}
+#Cont~p{
+    font-size:16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#form>input{
+    margin-top: px;
+}
+
+#anchor{
+    color: #84c225;
+    text-decoration: none;
+    
+}
+span{
+    font-size: 18px;
+    font-weight: bolder
+}
+
+
+/* </style> */
