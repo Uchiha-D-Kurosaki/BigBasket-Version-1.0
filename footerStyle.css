@@ -1,0 +1,162 @@
+/* vishvendra about css styling */
+#about{
+    width: 80%;
+    height: 350px;    
+    overflow: scroll;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid rgb(155, 153, 153);
+    box-sizing: border-box;
+    padding: 0px 20px 0px 20px;
+}
+.footer {
+    padding: 5%;
+    margin: 10%;
+    margin-top: -20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    border-bottom: 1px solid gray;
+}
+.footer li {
+    list-style: none;
+}
+.footer li:nth-child(1) {
+    color: rgb(132, 194, 37);
+    font-size: 20px;
+}
+.footer li:hover {
+    color: rgb(132, 194, 37);
+    cursor: pointer;
+}
+.footer-end{
+    margin-top: -80px;
+    margin-left: 9%;
+ 
+}
+.footer-end > div {
+    display: flex;
+    padding: 5px;
+}
+.footer-end > div h1 {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(132, 194, 37);
+}
+.ft-div {
+    width: 20%;
+}
+.ft-div ~ div {
+    width: 70%;
+    display: flex;
+}
+#download-img {
+    display: block;
+    margin: 8px;
+    height: 20%;
+}
+.footer-contact div{
+    size: 3%;
+    /* border: 1px solid red; */
+}
+.footer-end img {
+    width: 80%;
+}
+.footer li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.socialimg{
+    display: flex;
+    width: 10%;
+    height: 5%;
+}
+ 
+ 
+/* Shivendra About css styling*/
+.footer{
+    /* border: 1px solid black; */
+    display: flex;
+    border: 1px solid rgb(187, 181, 181);
+}
+.footer>div{
+    height: auto;
+    /* border: 1px solid red; */
+}
+#footer-download-app>div{
+    height: auto;
+    /* border: 1px solid green; */
+}
+#footer-download-app>div>div>a>img{
+    width: 80%;
+}
+.socialimg{
+    width: 70%;
+    height: auto;
+    /* border: 1px solid yellow; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,auto);
+    gap: 10px;
+}
+.socialimg>div{
+    /* border: 1px solid red; */
+    height: auto;
+}
+.socialimg>div>a>img{
+    width: 100%;
+}
+ 
+ 
+/* Slider styling */
+    /* -------------------------------img slider -------------------------------------------- */
+ 
+    #slider{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    /* Use this border or you can remove border and use box shadow here as per your requirement */
+    border: 1px solid rgb(194, 187, 187);  
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    float: left;
+    width: 20%;
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
