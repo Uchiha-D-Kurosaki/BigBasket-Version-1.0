@@ -7,7 +7,7 @@ Big Basket is a E-commerce Website which allows you to order grocery products, f
 ## Authors
 
 
-- [Shivendra Katiyar](https://www.github.com/octokatherine)
+- [Shivendra Katiyar](https://github.com/Uchiha-D-Kurosaki)
 
 
 
